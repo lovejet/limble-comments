@@ -1,0 +1,4 @@
+:host .menu-template-container {
+  position: absolute;
+  z-index: 999;
+}

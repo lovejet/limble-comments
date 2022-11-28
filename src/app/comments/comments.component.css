@@ -1,0 +1,22 @@
+.btn-add-comment {
+  float: right;
+  background-color: #ddd;
+}
+tbody tr:first-child td {
+  border: none;
+}
+.add-comment-panel {
+  width: 100%;
+  display: flex;
+}
+.add-comment-panel app-limble-textinput {
+  flex: 1;
+}
+.add-comment-panel button {
+  margin-left: 10px;
+}
+
+app-autocomplete {
+  flex: 1;
+  position: relative;
+}

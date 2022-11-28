@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div *ngIf="comments && comments.length > 0; else noComments">
+  <table class="table">
+    <tbody *ngFor="let comment of comments">
+      <tr>
+        <td [innerHTML]="comment.note"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div *ngIf="isInputShown" class="add-comment-panel">
+  <app-limble-textinput (textChange)="onCommentChange($event)" (mentionsChange)="onMentionsChange($event)"></app-limble-textinput>
+  <button class="btn btn-success btn-sm" (click)="addComment()">Add</button>  
+</div>
+<button class="btn btn-add-comment btn-sm" (click)="showCommentInput()" *ngIf="!isInputShown">Add Comment</button>
