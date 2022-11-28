@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "dev": "ng server",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
@@ -21,6 +22,7 @@
     "@angular/router": "~7.2.0",
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
+    "cross-env": "^7.0.3",
     "jquery": "^3.4.1",
     "moment": "^2.29.4",
     "popper.js": "^1.15.0",
